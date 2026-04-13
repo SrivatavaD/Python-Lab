@@ -40,3 +40,11 @@ elif operator == "/":
 # show an error message.
 else:
     print("Invalid operator.")
+
+
+
+#WAP to find the area of a square whose side is given by.
+print("Area of the Sqaure")
+side = float(input("Enter the side of the sqaure:"))
+area = side * side
+print("Area of the sqaure is:", area , "cm^2")
