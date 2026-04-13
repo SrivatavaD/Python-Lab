@@ -48,3 +48,18 @@ print("Area of the Sqaure")
 side = float(input("Enter the side of the sqaure:"))
 area = side * side
 print("Area of the sqaure is:", area , "cm^2")
+
+#WAP to input 2 floating point numbers & print their average.
+print("Average of the two numbers")
+num1 = float(input("Enter the first number:"))
+num2 = float(input("Enter the second number:"))
+average = (num1 + num2) /2
+print("The average of the two numbers is:", average)
+
+#WAP to input 2 int numbers, a and b.
+#Print True if a is greater than or equal to b. If not print False.
+print("Comparison of the two numbers")
+a = int(input("Enter the first number:"))
+b = int(input("Enter the second number:"))
+result = a >= b
+print("Is a greater than or equal to b?", result)
