@@ -63,3 +63,31 @@ print("Is digit only?", check_text.isdigit())
 # This checks whether a character or word is present in the string.
 print("Is 'H' in Hello?", "H" in greeting)
 print("Is 'z' in Hello?", "z" in greeting)
+
+
+# Some useful string functions
+
+# 11. endswith()
+# This checks if the string ends with a given word or character.
+sentence = "I am learning Python"
+print("Does the sentence end with 'Python'?", sentence.endswith("Python"))
+
+# 12. capitalize()
+# This makes the first letter capital and the rest small.
+small_text = "python programming"
+print("Capitalize example:", small_text.capitalize())
+
+# 13. replace()
+# This replaces one word or character with another.
+fruit_text = "I like mango"
+print("Replace function:", fruit_text.replace("mango", "apple"))
+
+# 14. find()
+# This finds the position of a word or character in the string.
+language_text = "Python is easy"
+print("Find function:", language_text.find("is"))
+
+# 15. count()
+# This counts how many times a word or character appears.
+repeat_text = "apple apple banana apple"
+print("Count function:", repeat_text.count("apple"))
