@@ -45,3 +45,29 @@ else:
 age  = int(input("Enter your age: "))
 result = "Adult" if age >=  18 else "Minor"  
 print(result)    
+
+
+# Type conversion means changing a value from one data type to another.
+# This is useful when we want to use the data in a different way.
+
+print("Type Conversion Example")
+
+# Here, "25" is stored as text, so Python treats it as a string.
+number_text = "25"
+print("Original value:", number_text)
+print("Original type:", type(number_text))
+
+# Convert the string into an integer.
+number_int = int(number_text)
+print("After int() conversion:", number_int)
+print("Type after conversion:", type(number_int))
+
+# Convert the integer into a float.
+number_float = float(number_int)
+print("After float() conversion:", number_float)
+print("Type after conversion:", type(number_float))
+
+# Convert the integer back into a string.
+number_string = str(number_int)
+print("After str() conversion:", number_string)
+print("Type after conversion:", type(number_string))
