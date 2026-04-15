@@ -34,3 +34,22 @@ print("Length of numbers list:", len(numbers))
 # Lists can also contain duplicate values.
 colors = ["red", "blue", "red"]
 print("List with duplicate values:", colors)
+
+# insert() adds an item at a specific position.
+fruits.insert(1, "kiwi")
+print("After insert():", fruits)
+
+# pop() removes an item using its index.
+# If no index is given, it removes the last item.
+removed_item = fruits.pop()
+print("Removed item using pop():", removed_item)
+print("After pop():", fruits)
+
+# sort() arranges the list in ascending order.
+sort_numbers = [50, 10, 40, 20, 30]
+sort_numbers.sort()
+print("After sort():", sort_numbers)
+
+# reverse() reverses the order of the list.
+sort_numbers.reverse()
+print("After reverse():", sort_numbers)
