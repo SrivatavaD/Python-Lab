@@ -30,3 +30,11 @@ print("Type of single_item:", type(single_item))
 # For example, fruits[0] = "orange" would give an error.
 
 print("Tuples are useful when values should not change.")
+
+# count() tells us how many times a value appears in the tuple.
+number_values = (1, 2, 3, 2, 2, 4)
+print("Count of 2 in tuple:", number_values.count(2))
+
+# index() tells us the position of the first matching value.
+fruit_values = ("apple", "banana", "mango")
+print("Index of banana in tuple:", fruit_values.index("banana"))
