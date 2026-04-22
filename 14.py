@@ -27,3 +27,28 @@ while number <= 100:
 
     # Increase the number by 1 each time.
     number += 1
+
+print("Search for a number in a tuple:")
+
+# This tuple contains square numbers.
+numbers_tuple = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
+
+# Ask the user which number they want to search.
+x = int(input("Enter the number to search: "))
+
+# Start checking from the first position.
+index = 0
+found = False
+
+# Use a while loop to search for the number.
+while index < len(numbers_tuple):
+    if numbers_tuple[index] == x:
+        print("Number found at index:", index)
+        found = True
+        break
+
+    index += 1
+
+# If the number was not found, show a message.
+if not found:
+    print("Number not found in the tuple.")
