@@ -59,3 +59,9 @@ while count < 5:
 # In simple words:
 print("break = stops the loop completely")
 print("continue = skips one turn and moves to the next")
+
+print("Numbers from 1 to 100 using for and range:")
+
+# `range(1, 101)` gives numbers from 1 to 100.
+for number in range(1, 101):
+    print(number)
