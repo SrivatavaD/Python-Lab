@@ -1,0 +1,4 @@
+1. Learn Python functions
+2. Practice recursion
+3. Study File I/O
+4. Revise examples

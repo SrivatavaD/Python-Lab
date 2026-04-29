@@ -1,0 +1,7 @@
+Student Report
+--------------
+Name: Aman
+Python Marks: 88
+Recursion Marks: 84
+File I/O Marks: 91
+Average Marks: 87.66666666666667
