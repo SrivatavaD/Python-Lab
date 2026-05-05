@@ -78,6 +78,103 @@ car2.start()
 car2.show_speed()
 
 
+# 6. Constructors in OOP
+# A constructor is a special method that runs automatically
+# when we create a new object.
+#
+# In Python, __init__ is used as the constructor.
+# It is mainly used to give starting values to an object.
+class ConstructorStudent:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def show_details(self):
+        print("Name:", self.name)
+        print("Age:", self.age)
+
+
+constructor_student1 = ConstructorStudent("Aman", 21)
+constructor_student2 = ConstructorStudent("Riya", 20)
+
+print("Constructor example:")
+constructor_student1.show_details()
+constructor_student2.show_details()
+
+
+# 7. Without constructor
+# Here we create the object first and then add values manually.
+class StudentWithoutConstructor:
+    def show_details(self):
+        print("Name:", self.name)
+        print("Age:", self.age)
+
+
+student_without_constructor = StudentWithoutConstructor()
+student_without_constructor.name = "Kabir"
+student_without_constructor.age = 22
+
+print("Without constructor:")
+student_without_constructor.show_details()
+
+
+# 8. Default constructor
+# A default constructor does not take extra values from the user.
+# It only has self as a parameter.
+class DefaultCar:
+    def __init__(self):
+        self.brand = "Toyota"
+        self.color = "White"
+
+    def show_details(self):
+        print("Brand:", self.brand)
+        print("Color:", self.color)
+
+
+default_car = DefaultCar()
+
+print("Default constructor:")
+default_car.show_details()
+
+
+# 9. Parameterized constructor
+# A parameterized constructor takes values from the user.
+class ParameterizedCar:
+    def __init__(self, brand, color):
+        self.brand = brand
+        self.color = color
+
+    def show_details(self):
+        print("Brand:", self.brand)
+        print("Color:", self.color)
+
+
+parameterized_car1 = ParameterizedCar("Honda", "Black")
+parameterized_car2 = ParameterizedCar("BMW", "Blue")
+
+print("Parameterized constructor:")
+parameterized_car1.show_details()
+parameterized_car2.show_details()
+
+
+# 10. Real-life constructor example
+class BankAccount:
+    def __init__(self, account_holder, balance):
+        self.account_holder = account_holder
+        self.balance = balance
+
+    def show_balance(self):
+        print(self.account_holder, "has balance", self.balance)
+
+
+account1 = BankAccount("Riya", 5000)
+account2 = BankAccount("Aman", 8000)
+
+print("Real-life constructor example:")
+account1.show_balance()
+account2.show_balance()
+
+
 # Important OOP words:
 # class      = blueprint
 # object     = real item created from a class
@@ -85,3 +182,4 @@ car2.show_speed()
 # method     = function inside a class
 # self       = refers to the current object
 # __init__   = constructor that runs when an object is created
+# constructor = special method used to give starting values to an object
