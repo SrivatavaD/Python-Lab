@@ -140,6 +140,86 @@ print("Length of list:", len([10, 20, 30]))
 print("Length of dictionary:", len({"name": "Aman", "age": 21}))
 
 
+# 7. Polymorphism with operators
+# The + operator works differently with numbers and strings.
+print("\n7. Polymorphism with + operator")
+print("Number addition:", 10 + 20)
+print("String joining:", "Hello " + "Python")
+
+
+# 8. Employee work example
+# Same method name work(), but different employees work differently.
+class Developer:
+    def work(self):
+        print("Developer writes code.")
+
+
+class Designer:
+    def work(self):
+        print("Designer creates UI designs.")
+
+
+class Tester:
+    def work(self):
+        print("Tester checks the software.")
+
+
+employees = [Developer(), Designer(), Tester()]
+
+print("\n8. Employee work polymorphism example")
+for employee in employees:
+    employee.work()
+
+
+# 9. Payment processing example
+# Same method name pay(), but payment method is different.
+class CashPayment:
+    def pay(self, amount):
+        print("Paid", amount, "using cash.")
+
+
+class OnlinePayment:
+    def pay(self, amount):
+        print("Paid", amount, "using online payment.")
+
+
+class CreditCardPayment:
+    def pay(self, amount):
+        print("Paid", amount, "using credit card.")
+
+
+payments = [CashPayment(), OnlinePayment(), CreditCardPayment()]
+
+print("\n9. Payment polymorphism example")
+for payment in payments:
+    payment.pay(500)
+
+
+# 10. Same function for different objects
+# The function print_details() can work with any object
+# that has a details() method.
+class Student:
+    def details(self):
+        print("Student name: Aman")
+
+
+class Teacher:
+    def details(self):
+        print("Teacher name: Sharma Sir")
+
+
+def print_details(person):
+    person.details()
+
+
+student1 = Student()
+teacher1 = Teacher()
+
+print("\n10. Same function for different objects")
+print_details(student1)
+print_details(teacher1)
+
+
 # Quick revision:
 # polymorphism      = same name, different behavior
 # method overriding = child class changes parent class method
