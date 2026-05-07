@@ -144,6 +144,103 @@ card_payment.payment_info()
 card_payment.pay(1000)
 
 
+# 5. Employee salary example
+# Every employee gets salary, but salary calculation can be different.
+class Employee(ABC):
+    def __init__(self, name):
+        self.name = name
+
+    @abstractmethod
+    def calculate_salary(self):
+        pass
+
+
+class FullTimeEmployee(Employee):
+    def __init__(self, name, monthly_salary):
+        super().__init__(name)
+        self.monthly_salary = monthly_salary
+
+    def calculate_salary(self):
+        print(self.name, "salary:", self.monthly_salary)
+
+
+class PartTimeEmployee(Employee):
+    def __init__(self, name, hours, rate_per_hour):
+        super().__init__(name)
+        self.hours = hours
+        self.rate_per_hour = rate_per_hour
+
+    def calculate_salary(self):
+        print(self.name, "salary:", self.hours * self.rate_per_hour)
+
+
+full_time_employee = FullTimeEmployee("Aman", 40000)
+part_time_employee = PartTimeEmployee("Riya", 80, 300)
+
+print("\n5. Employee salary abstraction example")
+full_time_employee.calculate_salary()
+part_time_employee.calculate_salary()
+
+
+# 6. Notification example
+# Every notification sends a message, but the sending process is different.
+class Notification(ABC):
+    @abstractmethod
+    def send(self, message):
+        pass
+
+
+class EmailNotification(Notification):
+    def send(self, message):
+        print("Email sent:", message)
+
+
+class SmsNotification(Notification):
+    def send(self, message):
+        print("SMS sent:", message)
+
+
+email_notification = EmailNotification()
+sms_notification = SmsNotification()
+
+print("\n6. Notification abstraction example")
+email_notification.send("Your order is confirmed.")
+sms_notification.send("Your OTP is 1234.")
+
+
+# 7. File operation example
+# Every file operation performs an action, but each action works differently.
+class FileOperation(ABC):
+    @abstractmethod
+    def execute(self):
+        pass
+
+
+class OpenFile(FileOperation):
+    def execute(self):
+        print("File opened successfully.")
+
+
+class SaveFile(FileOperation):
+    def execute(self):
+        print("File saved successfully.")
+
+
+class CloseFile(FileOperation):
+    def execute(self):
+        print("File closed successfully.")
+
+
+open_file = OpenFile()
+save_file = SaveFile()
+close_file = CloseFile()
+
+print("\n7. File operation abstraction example")
+open_file.execute()
+save_file.execute()
+close_file.execute()
+
+
 # Quick revision:
 # abstraction      = hide unnecessary details and show important features
 # abstract class   = class used as a base class
