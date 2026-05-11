@@ -21,7 +21,7 @@
 
 # # Palindrome check
 # # If a string is the same after reversing, it is called a palindrome.
-# name1 = "NITIN"
+# name1 = input("Enter name: ")
 # reverse_name1 = name1[::-1]
 
 # print("Original string:", name1)
@@ -46,7 +46,7 @@
 
 
 # # Separate letters and numbers from a string
-# text = "a1b2c3"
+# text = "a1b2c3d4"
 
 # letters = ""
 # numbers = ""
@@ -63,19 +63,19 @@
 
 
 # # Reverse every word, but keep word positions same
-# sentence = input("Enter a sentence: ")
+sentence = input("Enter a sentence: ")
 
-# words = sentence.split()
-# new_words = []
+words = sentence.split()
+new_words = []
 
-# for word in words:
-#     reverse_word = word[::-1]
-#     new_words.append(reverse_word)
+for word in words:
+    reverse_word = word[::-1]
+    new_words.append(reverse_word)
 
-# final_sentence = " ".join(new_words)
+final_sentence = " ".join(new_words)
 
-# print("Original sentence:", sentence)
-# print("Final sentence:", final_sentence)
+print("Original sentence:", sentence)
+print("Final sentence:", final_sentence)
 
 # Use of slicing in python
 # Slicing is a powerful feature in Python that allows you to extract a portion of a sequence (like a string, list, or tuple) by specifying a start index, an end index, and an optional step. The syntax for slicing is: sequence[start:end:step].
@@ -86,8 +86,8 @@
 # print(num [::1])
 
 # some basic slicing examples
-test = "python"
-print(test[1:5])
+# test = "python"
+# print(test[1:5])
 
-test = "abcdef"
-print(test)
+# test = "abcdef"
+# print(test)
