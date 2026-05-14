@@ -33,4 +33,37 @@
 #     print("Good Morinng")
 # else:
 #     print("Sleep weell")
+
+#use of break statement is not cumplusory in python
+# for loops in python
+
+# for k in range(5):
+#     print(k+1)
+
+# for k in range(1,20):
+#     print(k)    
     
+# for k in range(1,10,2):
+#     print(k)
+
+# i = int(input("Enter the number: "))
+# while(i<=38):
+#     i = int(input("Enter the number: "))
+#     print(i)
+# print("Done with the loop")    
+
+# count = 50 
+# while(count >0):
+#     print(count)
+#     count = count - 1
+# else:
+#     print("Done with the loop") 
+# 
+
+for i in range(12):
+    if(i==10):
+        break
+    print("5 X", i+1, "=", 5*(i+1))
+
+print("Done with the loop")
+
