@@ -1,0 +1,3 @@
+ maths is 89
+ science is 90
+ english 80
