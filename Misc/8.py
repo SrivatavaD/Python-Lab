@@ -12,19 +12,29 @@
 
 # print(a.name)    
 
-class person:
+# class person:
 
-    def __init__(self):
-        print("hey, i am a person")
+#     def __init__(self):
+#         print("hey, i am a person")
 
-    # name = "devansh"
-    # occupation = "Software Engineer"
+#     # name = "devansh"
+#     # occupation = "Software Engineer"
 
-    def info():
-        print(f"{self.name} is a {self.occupation}")
+#     def info():
+#         print(f"{self.name} is a {self.occupation}")
 
-a = person()
-a.name = "Divya"
-a.occ = "HR"
-a.info()
+# a = person()
+# a.name = "Divya"
+# a.occ = "HR"
+# a.info()
+
+def hello():
+    print("Hello world")
+
+def greet(fx):
+    def mfx():
+        print("Thansk for using this function")
+        fx()
+        print("thanks for using this function")
+            
 
