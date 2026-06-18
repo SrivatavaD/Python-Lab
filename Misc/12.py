@@ -87,17 +87,66 @@
 # Write a function safe_divide(a,b) that returns the results of a/b , but returns "Cannot Divide by zero" if b is 0.
 
 # This function safely divides a by b.
-def safe_divide(a, b):
-    # If b is 0, division is not possible.
-    if b == 0:
-        return "Cannot Divide by zero"
+# def safe_divide(a, b):
+#     # If b is 0, division is not possible.
+#     if b == 0:
+#         return "Cannot Divide by zero"
     
-    # If b is not 0, return the result of a divided by b.
-    return a / b
+#     # If b is not 0, return the result of a divided by b.
+#     return a / b
 
-# Calling the function with a valid divisor.
-print(safe_divide(10, 2))
+# # Calling the function with a valid divisor.
+# print(safe_divide(10, 2))
 
-# Calling the function with 0 as divisor.
-print(safe_divide(10, 0))
+# # Calling the function with 0 as divisor.
+# print(safe_divide(10, 0))
+
+# Write a function greet(name) that takes a name and returns "Hello, <name>!". If no name is given, default to "Guest".
+
+# This function takes a name and returns a greeting message.
+# If no name is passed, Python will use "Guest" as the default value.
+# def greet(name="Guest"):
+#     # Create and return the greeting using an f-string.
+#     return f"Hello, {name}!"
+
+# # Calling the function with a name.
+# print(greet("Devansh"))
+
+# # Calling the function without a name, so it uses the default value "Guest".
+# print(greet())
+
+# WAP to find the basic even and odd numbers using functions.
+
+# def even_odd(num):
+#     if num % 2 == 0:
+#         return "Even"
+#     else:
+#         return "Odd"
+# num = int(input("Enter a number: "))
+# print(even_odd(num))
+
+# Write a function isPalindrome(s) that checks if a string is a palindrome ignoring case and spaces. return true and false.
+# def isPalindrome():
+      
+#     if word == word[::-1]:
+#         print("Palindrome String")
+#     else:
+#         print("Not a Palindrome String")
+# word = input("enter a word: ") 
+# print(isPalindrome(word))
+
+def isplaindrome():
+    num = int(input("Enter a number: "))
+    original = num
+    reverse = 0
+    while num > 0:
+        digit = num % 10
+        reverse = reverse * 10 + digit
+        num = num // 10
+    if original == reverse:
+        print("Palindrome")
+    else:
+        print("Not a Palindrome")
+isplaindrome()
+
 
