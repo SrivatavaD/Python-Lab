@@ -135,18 +135,77 @@
 # word = input("enter a word: ") 
 # print(isPalindrome(word))
 
-def isplaindrome():
-    num = int(input("Enter a number: "))
-    original = num
-    reverse = 0
-    while num > 0:
-        digit = num % 10
-        reverse = reverse * 10 + digit
-        num = num // 10
-    if original == reverse:
-        print("Palindrome")
-    else:
-        print("Not a Palindrome")
-isplaindrome()
+# def isplaindrome():
+#     num = int(input("Enter a number: "))
+#     original = num
+#     reverse = 0
+#     while num > 0:
+#         digit = num % 10
+#         reverse = reverse * 10 + digit
+#         num = num // 10
+#     if original == reverse:
+#         print("Palindrome")
+#     else:
+#         print("Not a Palindrome")
+# isplaindrome()
 
+
+# write a function to find fibonacci that returns a list of the first n numbers in the fibonacci sequence.
+# def fibonacci():
+#     n = int(input("Enter how many fibonacci numbers you want: "))
+#     a = 0
+#     b = 1
+
+#     for i in range(n):
+#         print(a,end = " ")
+#         c = a + b
+#         a = b
+#         b = c
+# fibonacci()
+
+# def fibonacci(n):
+#     a = 0
+#     b = 1
+#     for i in range(n):
+#         print(a, end=" ")
+#         c = a + b
+#         a = b
+#         b = c
+# n = int(input("Enter how many fibonacci numbers you want: "))
+# fibonacci(n)
+
+# Intermediate - Word Frequency Counter
+# Write a function word_count(text) that takes a string, splits it into words
+# lowercased, punctuation stripped), and returns a dictionary with each word
+# as a key and its count as the value.
+
+import string
+
+def word_count(text):
+    # Convert the whole text to lowercase so "Python" and "python" are counted together.
+    text = text.lower()
+
+    # Remove punctuation marks like comma, full stop, question mark, etc.
+    for symbol in string.punctuation:
+        text = text.replace(symbol, "")
+
+    # Split the cleaned text into a list of words.
+    words = text.split()
+
+    # Create an empty dictionary to store each word and its count.
+    count = {}
+
+    # Go through each word one by one.
+    for word in words:
+        # If the word already exists in the dictionary, increase its count by 1.
+        if word in count:
+            count[word] += 1
+        # If the word is new, add it to the dictionary with count 1.
+        else:
+            count[word] = 1
+
+    # Return the final dictionary.
+    return count
+
+print(word_count("Python is fun. Python is easy, and python is powerful!"))
 
