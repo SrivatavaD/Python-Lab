@@ -32,6 +32,8 @@ def repeat(func):
 def say_hi():
     print("Hi")
 say_hi()
+def add (func):
+    def wrapper
 
 
 def uppercase(func):
